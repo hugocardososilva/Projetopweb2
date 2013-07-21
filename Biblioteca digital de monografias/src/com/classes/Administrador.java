@@ -3,6 +3,7 @@ package com.classes;
 public class Administrador {
 	int codigo, telefone;
 	String senha, nome, endereco, email;
+	FuncaoAdministrativa funcao;
 	public Administrador(int codigo, int telefone, String senha, String nome,
 			String endereco, String email) {
 		super();

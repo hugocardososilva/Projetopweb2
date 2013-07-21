@@ -1,11 +1,10 @@
 package com.classes;
 
 public class Usuario {
-	String login, senha, cpf, endereco, instituicao, email, niveleducacional;
+	String login, senha, endereco, instituicao, email, niveleducacional;
+	int cpf;
 	
-	
-	
-	public Usuario(String login, String senha, String cpf, String endereco,
+	public Usuario(String login, String senha, int cpf, String endereco,
 			String instituicao, String email, String niveleducacional) {
 		super();
 		this.login = login;
@@ -33,11 +32,11 @@ public class Usuario {
 		this.senha = senha;
 	}
 
-	private String getCpf() {
+	private int getCpf() {
 		return cpf;
 	}
 
-	private void setCpf(String cpf) {
+	private void setCpf(int cpf) {
 		this.cpf = cpf;
 	}
 
@@ -72,7 +71,9 @@ public class Usuario {
 	private void setNiveleducacional(String niveleducacional) {
 		this.niveleducacional = niveleducacional;
 	}
-
+	
+	
+	
 
 
 }

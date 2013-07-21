@@ -5,7 +5,7 @@ public class Administrador {
 	String senha, nome, endereco, email;
 	FuncaoAdministrativa funcao;
 	public Administrador(int codigo, int telefone, String senha, String nome,
-			String endereco, String email) {
+			String endereco, String email, FuncaoAdministrativa funcao) {
 		super();
 		this.codigo = codigo;
 		this.telefone = telefone;
@@ -13,6 +13,7 @@ public class Administrador {
 		this.nome = nome;
 		this.endereco = endereco;
 		this.email = email;
+		this.funcao = funcao;
 	}
 	private int getCodigo() {
 		return codigo;
@@ -50,7 +51,12 @@ public class Administrador {
 	private void setEmail(String email) {
 		this.email = email;
 	}
-	
+	private FuncaoAdministrativa getFuncao() {
+		return funcao;
+	}
+	private void setFuncao(FuncaoAdministrativa funcao) {
+		this.funcao = funcao;
+	}
 	
 
 }
